@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body { }
+        div {
+            margin-bottom: 10px;
+            
+            
+        }
+        .widd{
+            width: 15vw;
+        }
+        .innerd{
+            width: 30vw;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        
+    </style>
+</head>
+<body>
+<form action="#" method="get">
+    <div class="Sect">
+            <fieldset>
+                <legend>Your Address</legend>
+                <div class="innerd">
+                    <label class="float-left" for="first name">First Name</label>
+                    <input class="float-right" type="text" id="First Name" required>
+                </div>
+                <div class="innerd">
+                    <label class="float-left" for="last name">Last Name</label>
+                    <input type="text" id="Last Name" required>
+                </div>
+                <div class="innerd">
+                    <label class="float-left" for="Street">Street</label>
+                    <input type="text" id="Street">
+                </div>
+                <div class="innerd">
+                    <label class="float-left" for="city">City</label>
+                    <input type="city" id="City">
+                </div>
+            </fieldset>
+    </div>
+
+    <div class="Sect">
+        <fieldset>
+            <legend>Additional Details</legend>
+        <div class="innerd">
+            <label>Biography</label>
+            <textarea name="Biography" rows="2" cols="20"> </textarea>
+        </div>
+        <!-- NUMBER TYPE -->
+        <div class="innerd"> 
+            <label for="Age group">Age Group</label> 
+            <input type="number" id="Age" placeholder="0 to 9 years" width="200" min="0"
+            max="9" class="widd">
+        </div>
+        <div class="innerd">
+            <label for="Image"> Image</label>
+            <input class="widd" type="file">
+        </div>
+        </fieldset>
+    </div> 
+    
+    <div class="Sect">
+        <fieldset>
+            <legend>Interests</legend>
+        <div class="innerd">
+            <p>Hobbies</p>
+            <select name="Favourite public transport?"id="Favourite public transport?" multiple>
+                <option value="Playin soccer">Playing soccer</option>
+                <option value="Bus">Dancing</option>
+                <option value="Bus">Gardening</option>
+                <option value="Bus">Watching Movies</option>
+            </select>
+        </div>
+        
+        <div class="innerd"> 
+            <p>Favourite Car? </p>   
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select> 
+        </div>
+            <!-- SELECT TAG -->
+        <div class="innerd" >
+            <p>Favourite public</p>
+            <select multiple style="margin-bottom: 40px; ">
+                <optgroup label="Ground">
+                    <option value="Train">Train</option>
+                    <option value="Bus">Bus</option>
+                </optgroup>
+                <optgroup label="Water">
+                    <option value="Boat">Boat</option>
+                    <option value="Ferry">Ferry</option>
+                </optgroup>
+            </select>
+        </div>
+        </fieldset>
+    </div>
+
+</body>
+</html>
